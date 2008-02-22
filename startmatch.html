@@ -1,0 +1,26 @@
+
+<fb:header>Capture the Flag</fb:header>
+
+<fb:tabs>
+  <fb:tab-item href='http://apps.facebook.com/ctf-app/start-match/' title='Start a Match' selected='true'/>
+  <fb:tab-item href='http://apps.facebook.com/ctf-app/open-matches/' title='Look for Open Matches'/>
+  <fb:tab-item href='http://apps.facebook.com/ctf-app/scoreboard/' title='Scoreboard'/>
+  <fb:tab-item href='http://apps.facebook.com/ctf-app/preferences/' title='Preferences'/>
+</fb:tabs>
+
+<form action="http://facebook.justinvoss.com/facebook-ctf/creatematch.py">
+  Map:
+  <select name="map">
+    <option>Map 1</option>
+    <option>Map 2</option>
+    <option>Map 3</option>
+  </select>
+  <br>Max Players:
+  <input type="text" name="max_players" size="4" maxlength="4" value="8">
+  <br>Score Limit:
+  <input type="text" name="score_limit" size="4" maxlength="4" value="3">
+  <br>Time Limit:
+  <input type="text" name="time_limit" size="5" maxlength="5" value="20:00">
+  <br>Password:
+  <input type="text" name="game_password" size="20">
+</form>
