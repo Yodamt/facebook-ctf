@@ -1,0 +1,96 @@
+
+<style type="text/css">
+
+#game-area {
+	position: relative;
+	width: 646px;
+	height: 300px;
+	background: #eee;
+	border-top: 1px solid #aaa;
+	border-bottom: 1px solid #aaa;
+	margin-bottom: 20px;
+}
+
+#game-board {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #ddd;
+	width: 500px;
+	height: 300px;
+	border-right: 1px solid #aaa;
+}
+
+#game-controls {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 145px;
+}
+
+	#game-controls #dpad {
+		position: relative;
+		width: 145px;
+		height: 145px;
+		background: #eee url(http://facebook.justinvoss.com/static/dpad.png) center center no-repeat;
+	}
+	
+	#game-controls #dpad span {
+		display: block;
+		width: 45px;
+		height: 45px;
+		position: absolute;
+		cursor: pointer;
+		text-indent: -9999em;
+	}
+	
+		#game-controls #dpad #north {
+			top: 6px;
+			left: 50px;
+		}
+		
+		#game-controls #dpad #south {
+			bottom: 6px;
+			left: 50px;
+		}
+		
+		#game-controls #dpad #west {
+			bottom: 50px;
+			left: 5px;
+		}
+		
+		#game-controls #dpad #east {
+			bottom: 50px;
+			right: 5px;
+		}
+
+</style>
+
+
+<fb:dashboard>
+	<fb:help href="help">help</fb:help>
+</fb:dashboard>
+
+<div id="game-area">
+
+	<div id="game-board">
+
+		<!-- tiles get loaded here... -->
+
+	</div>
+
+	<div id="game-controls">
+
+		<h2>Controls</h2>
+		
+		<div id="dpad">
+			<span id="north" onclick="boardController.movePlayer('N')">^</span>
+			<span id="west" onclick="boardController.movePlayer('W')">&lt;</span>
+			<span id="east" onclick="boardController.movePlayer('E')">&gt;</span>
+			<span id="south" onclick="boardController.movePlayer('S')">v</span>
+		</div>
+
+	</div>
+
+</div>
+

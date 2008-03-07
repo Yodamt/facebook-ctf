@@ -1,0 +1,31 @@
+
+<fb:dashboard>
+	<fb:help href="help">help</fb:help>
+</fb:dashboard>
+
+<fb:tabs>
+  <fb:tab-item href='http://apps.facebook.com/ctf-app/start-match/' title='Start a Match' selected='true'/>
+  <fb:tab-item href='http://apps.facebook.com/ctf-app/open-matches/' title='Look for Open Matches'/>
+  <fb:tab-item href='http://apps.facebook.com/ctf-app/scoreboard/' title='Scoreboard' align='right' />
+  <fb:tab-item href='http://apps.facebook.com/ctf-app/preferences/' title='Preferences' align='right' />
+</fb:tabs>
+
+<fb:editor action="submit">
+  <fb:editor-custom label="Map">
+	  <select name="map">
+		<option>Map 1</option>
+		<option>Map 2</option>
+		<option>Map 3</option>
+	  </select>
+  </fb:editor-custom>
+  <fb:editor-text label="Max Players" name="max_players" maxlength="4" value="8" />
+  <fb:editor-text label="Score Limit" name="score_limit" maxlength="4" value="8" />
+  <fb:editor-text label="Time Limit" name="time_limit" maxlength="5" value="20:00" />
+  <fb:editor-text label="Password" name="game_password" maxlength="20" />
+  
+  <fb:editor-buttonset>
+  	<fb:editor-button value="Start Match" />
+  	<fb:editor-cancel />
+  </fb:editor-buttonset>
+  
+</fb:editor>
