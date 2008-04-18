@@ -1,22 +1,24 @@
-<fb:header>Preferences</fb:header>
+<!-- <fb:header>Preferences</fb:header> -->
+
+<fb:dashboard>
+	<fb:help href="help">help</fb:help>
+</fb:dashboard>
 
 <fb:tabs>
-	<fb:tab-item href="http://apps.facebook.com/ctf-app/index.html" title="Home"/>
-	<fb:tab-item href="http://apps.facebook.com/ctf-app/instructions.html" title="Instructions"/>
-	<fb:tab-item href="http://apps.facebook.com/ctf-app/preferences.html" title="Preferences" selected='true' />
-	<fb:tab-item href="http://apps.facebook.com/ctf-app/startmatch.html" title="Start a Match" />
-	<fb:tab-item href="http://apps.facebook.com/ctf-app/openmatches.html" title="Look for Open Matches" />
-	<fb:tab-item href="http://apps.facebook.com/ctf-app/scoreboard.html" title="Scoreboard" />
+  <fb:tab-item href='http://apps.facebook.com/ctf-app/start-match/' title='Start a Match'/>
+  <fb:tab-item href='http://apps.facebook.com/ctf-app/open-matches/' title='Look for Open Matches'/>
+  <fb:tab-item href='http://apps.facebook.com/ctf-app/scoreboard/' title='Scoreboard' align='right'/>
+  <fb:tab-item href='http://apps.facebook.com/ctf-app/preferences/' title='Preferences' selected='true' align='right'/>
 </fb:tabs>
 
 <!--////////////////////////////////////////////////////////////<div align="center">-->
 
-<fb:editor action="http://apps.facebook.com/ctf-app/preferences.html" labelwidth="10">
-	<fb:editor-text label="Team Name" name="teamName" value="The Leopards"/>
+<fb:editor action="http://apps.facebook.com/ctf-app/saveprefs" labelwidth="10">
+	<fb:editor-text label="Team Name" name="teamName" value="userTeamName"/>
 	
 	<fb:editor-custom label="Team Color">
 		<select name="teamColor">
-			<option value="0" selected>red</option>
+			<option value="0">red</option>
 			<option value="1">orange</option>
 			<option value="2">yellow</option>
 			<option value="3">green</option>
@@ -31,7 +33,7 @@
 
 	<fb:editor-custom label="Individual Color">
 		<select name="individualColor">
-			<option value="0" selected>red</option>
+			<option value="0">red</option>
 			<option value="1">orange</option>
 			<option value="2">yellow</option>
 			<option value="3">green</option>
@@ -46,7 +48,7 @@
 
 	<fb:editor-custom label="Number of Flags">
 		<select name="numberOfFlags">
-			<option value="0" selected>1</option>
+			<option value="0">1</option>
 			<option value="1">2</option>
 			<option value="2">3</option>
 			<option value="3">4</option>
@@ -61,7 +63,7 @@
 
 	<fb:editor-custom label="Terrain">
 		<select name="terrain">
-			<option value="0" selected>grass</option>
+			<option value="0">grass</option>
 			<option value="1">dirt</option>
 			<option value="2">dirt/grass</option>
 			<option value="3">rocks/grass</option>
@@ -75,7 +77,7 @@
 
 	<fb:editor-custom label="Grid">
 		<select name="grid">
-			<option value="0" selected>off</option>
+			<option value="0">off</option>
 			<option value="1">on</option>
 		</select>
 	</fb:editor-custom>
