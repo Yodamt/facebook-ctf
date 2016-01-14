@@ -1,0 +1,1 @@
+This is a Capture the Flag game for the Facebook Application platform.
